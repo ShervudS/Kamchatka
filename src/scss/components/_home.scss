@@ -1,0 +1,63 @@
+// home
+.home{
+    height: 100vh;
+    background: #E5E5E5 url('../img/home_bg.png') center / cover  no-repeat;
+    padding-top: count-rem(102);
+    &__item{
+        max-width: 50%;
+        width: 100%;
+    }
+    &__title{
+        font-family: 'Mosserat', sans-serif;
+        font-weight: 900;
+        font-size: count-rem(56);
+        line-height: 120%;
+        color: $white;
+    }
+    &__date{
+        margin-top: count-rem(27);
+        width: max-content;
+        background-color: $orange;
+        padding: 0 count-rem(25);
+        border-radius: 1rem;
+
+        font-family: "Mosserat", sans-serif;
+        font-weight: 700;
+        font-size: count-rem(30);
+        line-height: 150%;
+        color: $white;
+    }
+    &__descr{
+        margin-top: count-rem(40);
+        margin-bottom: count-rem(27);
+        max-width: 380px;
+        font-weight: 400;
+        font-size: count-rem(20);
+        line-height: 120%;
+        color: $white;
+    }
+    &__timetable{
+        display: flex;
+        align-items: center;
+        text-decoration: underline;
+        color: $white;
+        font-size: count-rem(18);
+        line-height: 150%;
+        &-link{
+            &:hover .home__timetable-icon{
+                transform: rotate(135deg);
+            }
+        }
+        &-icon{
+            margin-left: count-rem(18);
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform .3s ease 0s;
+        }
+    }
+}

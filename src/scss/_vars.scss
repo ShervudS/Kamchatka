@@ -1,6 +1,6 @@
 // value container
 $maxWidth: 1920;
-$maxWidthContainer: 1366;
+$maxWidthContainer: 1246;
 
 // value Font-Size
 $minFontSize: 16;
@@ -11,4 +11,10 @@ $addSize: $maxFontSize - $minFontSize;
 	@return $value / $maxFontSize + rem;
 }
 // COLORS
+$primary: #275553;
+$orange: #F47648;
+$black: #212121;
+$darkGrey: #5A5A5A;
+$gray: #BABABA;
+$white: #FFFFFF;
 

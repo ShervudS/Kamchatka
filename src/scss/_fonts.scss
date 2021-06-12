@@ -1,1 +1,35 @@
 // @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Bold'),
+         url('../fonts/montserratbold.woff2') format('woff2'),
+         url('../fonts/montserratbold.woff') format('woff'),
+         url('../fonts/montserratbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/lato_regular.eot');
+	src: url('../fonts/lato_regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/lato_regular.woff2') format('woff2'),
+		url('../fonts/lato_regular.woff') format('woff'),
+		url('../fonts/lato_regular.ttf') format('truetype'),
+		url('../fonts/lato_regular.svg#lato_regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Black'),
+         url('../fonts/Robotoblack.woff2') format('woff2'),
+         url('../fonts/Robotoblack.woff') format('woff'),
+         url('../fonts/Robotoblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

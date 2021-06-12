@@ -1,0 +1,14 @@
+// value container
+$maxWidth: 1920;
+$maxWidthContainer: 1366;
+
+// value Font-Size
+$minFontSize: 16;
+$maxFontSize: 22;
+$addSize: $maxFontSize - $minFontSize;
+
+@function count-rem($value) {
+	@return $value / $maxFontSize + rem;
+}
+// COLORS
+

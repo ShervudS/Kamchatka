@@ -1,0 +1,205 @@
+// footer
+.footer{
+    background-color: $black;
+    padding-top: count-rem(63);
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__column{
+        min-height: 312px;
+        margin-bottom: 21px;
+        &:not(:last-child){
+            border-right: 1px solid $gray;
+            padding-right: count-rem(40);
+        }
+        &:not(:first-child){
+            padding-left: count-rem(40);
+        }
+    }
+    &__logo{
+        display: flex;
+    }
+    &__nav{
+        margin-top: count-rem(36);
+        & > .nav__list{
+            flex-direction: column;
+            align-items: flex-start;
+            & > .nav__item{
+                margin: 0;
+                &:not(:last-child){
+                    margin: 0 0 8px 0;
+                }
+                & > .nav__link{
+                    padding: 4px 0;
+                    color: $gray;
+                    font-size: count-rem(16);
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+    &__date{
+        padding: count-rem(22) 0;
+        border-top: 2px solid $darkGrey;
+        width: 100%;
+        text-align: start;
+        font-family: 'OpenSans', sans-serif;
+        font-weight: 400;
+        font-size: count-rem(14);
+        line-height: 150%;
+        color: $white;
+    }
+}
+.instagram{
+    max-width: 416px;
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $gray;
+    }
+    &__name{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: count-rem(16);
+        line-height: 150%;
+    }
+    &__link{
+        padding: count-rem(8) count-rem(34);
+        font-size: count-rem(14);
+        line-height: 150%;
+        border-radius: 5px;
+        border: 1px solid $gray;
+        transition: color, border-color .3s ease 0s;
+        &:hover{
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+    &-photo{
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -8.5px;
+        }
+        &__item{
+            width: 105px;
+            margin-top: 8.5px;
+            margin-right: 8.5px;
+        }
+        &__link{
+            max-width: 105px;
+            width: 100%;
+            max-height: 112px;
+        }
+        &__img{
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+        }
+    }
+}
+
+.feedback{
+    display: flex;
+    &__logo{
+        margin-right: count-rem(18);
+        border-radius: 8px;
+        width: 63px;
+        height: 102px;
+        flex: 0 0 auto;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__descr{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: count-rem(16);
+        line-height: 150%;
+    }
+    &__title{
+        max-width: 237px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        color: $white;
+    }
+    &__link{
+        margin-top: 6px;
+        color: $gray;
+        position: relative;
+        transition: color .3s ease 0s;
+        &::after{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            width: 0;
+            height: 1px;
+            background-color: $white;
+            transition: width .3s ease 0s;
+        }
+        &:hover{
+            color: $white;
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.social{
+    margin-top: count-rem(46);
+    display: flex;
+    flex-direction: column;
+    &__title{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: count-rem(16);
+        line-height: 150%;
+        color: $white;
+    }
+}
+
+.work{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__link-tel{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: count-rem(20);
+        line-height: 150%;
+        color: $white;
+    }
+    &__time{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: count-rem(14);
+        line-height: 220%;
+        color: $gray;
+    }
+}
+
+.contacts{
+    margin-top: count-rem(34);
+    display: flex;
+    flex-direction: column;
+    font-size: count-rem(16);
+    line-height: 150%;
+    color: $white;
+    &__link-mail{
+        margin-bottom: count-rem(12) ;
+    }
+}

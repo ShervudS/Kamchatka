@@ -4,11 +4,11 @@ $maxWidthContainer: 1246;
 
 // value Font-Size
 $minFontSize: 16;
-$maxFontSize: 22;
+$maxFontSize: 16;
 $addSize: $maxFontSize - $minFontSize;
 
 @function count-rem($value) {
-	@return $value / $maxFontSize + rem;
+	@return $value / $minFontSize + rem;
 }
 // COLORS
 $primary: #275553;
